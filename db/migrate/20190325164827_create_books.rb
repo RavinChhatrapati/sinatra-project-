@@ -3,7 +3,7 @@ class CreateBooks < ActiveRecord::Migration
     create_table :books do |t|
       t.string :title
       t.string :author
-      t.integer :user_id
+      t.integer :user_id  # foreign key
 
       t.timestamps null: false
     end
